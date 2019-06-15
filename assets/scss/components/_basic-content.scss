@@ -1,5 +1,8 @@
 .basic-content{
 	padding: grid(1 0);
+	@media #{$small-only}{
+		padding: $mobile-padding;
+	}
 	h1{
 		color: color(Blue);
 	}

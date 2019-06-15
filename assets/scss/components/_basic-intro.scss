@@ -1,5 +1,9 @@
 .basic-intro{
 	padding: grid(3 0 1 0);
+	@media #{$small-only}{
+		padding: $mobile-padding;
+		padding-top: 120px;
+	}
 	h1{
 		color: color(Blue);
 	}
