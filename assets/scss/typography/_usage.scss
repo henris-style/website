@@ -1,0 +1,37 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: inherit;
+	&.sub {
+		font-weight: 400;
+	}
+}
+
+h1 {
+	font-size: grid(1);
+	line-height: 1;
+	@include min-(font-size, 1, 32px);
+}
+
+h2 {
+	font-size: grid(1);
+	line-height: 1;
+	@include min-(font-size, 1, 24px);
+}
+
+h4 {
+	font-size: grid(0.4);
+	line-height: 1;
+	@include min-(font-size, .4, 20px);
+}
+
+p {
+	font-size: rem(18);
+	line-height: 1.5;
+	& + p {
+		font-size: 1rem;
+	}
+}
