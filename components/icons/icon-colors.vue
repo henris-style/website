@@ -1,8 +1,8 @@
 <template>
 	<svg class="icon icon--colors">
-		<circle cx="50%" cy="50%" r="15"></circle>
-		<circle cx="50%" cy="50%" r="15"></circle>
-		<circle cx="50%" cy="50%" r="15"></circle>
+		<circle cx="50%" cy="50%" r="7.5%"></circle>
+		<circle cx="50%" cy="50%" r="7.5%"></circle>
+		<circle cx="50%" cy="50%" r="7.5%"></circle>
 	</svg>
 </template>
 

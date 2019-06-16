@@ -28,18 +28,30 @@ svg {
 
 		&:nth-child(1) {
 			--translate-x: #{-grid(1)};
+			@media #{$small-only} {
+				--translate-x: #{-grid(2)};
+			}
 		}
 		&:nth-child(2) {
 			--translate-x: #{-grid(0.5)};
+			@media #{$small-only} {
+				--translate-x: #{-grid(1)};
+			}
 		}
 		&:nth-child(3) {
 			--translate-x: #{-grid(0)};
 		}
 		&:nth-child(4) {
 			--translate-x: #{grid(0.5)};
+			@media #{$small-only} {
+				--translate-x: #{grid(1)};
+			}
 		}
 		&:nth-child(5) {
 			--translate-x: #{grid(1)};
+			@media #{$small-only} {
+				--translate-x: #{grid(2)};
+			}
 		}
 	}
 }

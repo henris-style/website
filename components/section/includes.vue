@@ -104,12 +104,18 @@ export default {
 	&__block {
 		background-color: color(White);
 		padding: 2rem;
+		@media #{$small-only} {
+			padding: $mobile-padding / 2;
+		}
 	}
 	&__icon {
 		display: block;
 		height: grid(3);
 		@media #{$small-only} {
 			height: grid(6);
+			svg {
+				height: grid(6);
+			}
 		}
 	}
 	&__title {
@@ -126,6 +132,9 @@ export default {
 	}
 	&__column {
 		padding: $mobile-padding / 2;
+		@media #{$small-only} {
+			padding: $mobile-padding / 4;
+		}
 	}
 }
 </style>
