@@ -1,0 +1,50 @@
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+$min-width: 0;
+@each $bp-name, $bp-value in $grid-breakpoints {
+	$mq-only: '#{$grid-screen} and (min-width: #{$min-width}px) and (max-width: #{$bp-value}px)';
+	$mq: '#{$grid-screen} and (min-width: #{$min-width}px)';
+	$min-width: $bp-value + 1;
+
+	@media #{$mq-only} {
+		.#{$bp-name}-column-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+	@media #{$mq} {
+		.#{$bp-name}-up-column-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+	@media #{$mq-only} {
+		.#{$bp-name}-row-reverse {
+			flex-direction: row-reverse;
+		}
+	}
+	@media #{$mq} {
+		.#{$bp-name}-up-row-reverse {
+			flex-direction: row-reverse;
+		}
+	}
+}

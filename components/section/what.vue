@@ -2,7 +2,7 @@
 	<section class="what background--darkdark">
 		<div class="row center">
 			<div class="column small-full medium-three-quarter">
-				<div class="row">
+				<div class="row small-column-reverse">
 					<div class="column small-full medium-half">
 						<div class="content">
 							<h2>
@@ -17,6 +17,11 @@
 								and how much. So the default is 0kb.
 							</p>
 						</div>
+					</div>
+					<div class="column small-full medium-half align-center visual-container">
+						<span class="visual-0kb">
+							0kb
+						</span>
 					</div>
 				</div>
 			</div>
@@ -41,5 +46,17 @@ export default {};
 			padding: $mobile-padding $mobile-padding $mobile-padding ($mobile-padding * 2);
 		}
 	}
+}
+.visual-0kb {
+	border: 0.5rem solid color(Lime);
+	padding: grid(1);
+	font-size: grid(2);
+	color: color(Lime);
+}
+.visual-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: grid(3);
 }
 </style>

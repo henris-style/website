@@ -51,7 +51,9 @@
 					<code>
 						<pre>
 @include menu(5rem, 1rem, 0.5rem, Lime, 0.5rem);
-@include menu-close; </pre></code>
+@include menu-close; </pre
+						></code
+					>
 				</div>
 				<div class="column small-third">
 					<div class=" example__view example__block">
@@ -111,12 +113,12 @@ code pre {
 }
 .menu-example-alt {
 	span {
-		@include menu(5rem, 1rem, 0.5rem, Lime, 0.5rem);
+		@include menu(5rem, 1rem, 0.5rem, color(Lime), 0.5rem);
 	}
 }
 .menu-example-alt-close {
 	span {
-		@include menu(5rem, 1rem, 0.5rem, Lime, 0.5rem);
+		@include menu(5rem, 1rem, 0.5rem, color(Lime), 0.5rem);
 		@include menu-close();
 	}
 }

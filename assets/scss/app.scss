@@ -16,6 +16,8 @@ $output: set-output(css, true);
 @import 'components/index';
 
 
+@import 'helpers';
+
 hr{
 	margin: grid(1 0);
 	color: color(Ice);
