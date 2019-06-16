@@ -3,7 +3,11 @@
 		<div class="row center">
 			<div class="column small-full medium-three-quarter">
 				<div class="content">
-					<h1><span>Henri’s</span>, the Sass toolbelt which helps you do the fun things yourself.</h1>
+					<h1>
+						<span><span>Henri’s</span>, the Sass toolbelt</span>
+						<span>which helps you do</span>
+						<span> the fun things yourself again.</span>
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -23,7 +27,6 @@ export default {};
 	align-items: center;
 	justify-content: center;
 	.content {
-		max-width: 40rem;
 		@media #{$small-only} {
 			padding: $mobile-padding;
 		}
@@ -32,6 +35,18 @@ export default {};
 		color: color(Blue);
 		font-size: grid(1);
 		@include min-('font-size', 1, 32);
+		> span {
+			display: block;
+			padding: 1rem;
+			margin: -1rem;
+			clip-path: inset(0 0 100% 0);
+			animation: showLine 1s forwards;
+		}
+	}
+}
+@keyframes showLine {
+	to {
+		clip-path: inset(0 0 0% 0);
 	}
 }
 </style>

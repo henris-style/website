@@ -1,0 +1,17 @@
+.content {
+	ul:not(class) {
+		li {
+			padding: 0.5rem;
+			line-height: 1.5;
+			position: relative;
+			display: flex;
+
+			&::before {
+				content: var(--content-list-icon, '-');
+				padding-right: var(--content-list-space, 0.75rem);
+				display: block;
+				line-height: inherit;
+			}
+		}
+	}
+}

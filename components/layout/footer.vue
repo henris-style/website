@@ -9,8 +9,8 @@
 				</div>
 			</div>
 			<div class="column small-full medium-three-quarter footer__navigation">
-				<div class="row">
-					<div class="column small-full medium-quarter footer__column">
+				<div class="row small-full medium-third large-quarter ">
+					<div class="column footer__column">
 						<h4>About</h4>
 						<ul class="footer__nav-list">
 							<li class="footer__nav-item">
@@ -50,7 +50,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="column small-full medium-quarter footer__column">
+					<div class="column footer__column">
 						<h4>Docs</h4>
 						<ul class="footer__nav-list">
 							<li class="footer__nav-item">
@@ -97,7 +97,7 @@
 						<li class="footer__nav-item"></li>
 					</div>
 
-					<div class="column small-full medium-quarter footer__column">
+					<div class="column footer__column">
 						<h4>More</h4>
 						<ul class="footer__nav-list">
 							<li class="footer__nav-item">
@@ -157,6 +157,7 @@ export default {};
 	}
 	&__column {
 		padding-top: grid(1);
+		position: relative;
 		h4 {
 			color: color(Blue);
 		}
@@ -175,12 +176,14 @@ export default {};
 		color: color(DarkDark);
 		text-decoration: none;
 		position: relative;
+		display: inline-block;
 		span {
 			opacity: 0.25;
 			position: absolute;
 			left: grid(3);
+			top: 0;
 			white-space: nowrap;
-			@media #{$small-only} {
+			@media #{$medium-down} {
 				position: relative;
 				display: block;
 				left: 0;

@@ -31,7 +31,9 @@ h4 {
 p {
 	font-size: rem(18);
 	line-height: 1.5;
+	max-width: 60ch;
 	& + p {
 		font-size: 1rem;
 	}
 }
+
