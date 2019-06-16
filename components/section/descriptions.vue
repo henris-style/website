@@ -99,6 +99,9 @@ export default {};
 		width: calc(100% - #{grid(4)});
 		padding: grid(2 1);
 		flex-shrink: 0;
+		@media #{$small-only} {
+			padding: $mobile-padding;
+		}
 		&:last-child {
 			width: 100%;
 			padding-right: grid(5);
