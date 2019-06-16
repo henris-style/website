@@ -26,7 +26,7 @@
 							<span class="scroller__text">{{ example.name }}</span>
 						</button>
 					</li>
-					<li v-for="(example, idx) in examples" :key="idx" class="scroller__item">
+					<li v-for="(example, idx) in examples" :key="idx" class="scroller__item hide-for-small-only">
 						<button
 							class="scroller__link"
 							:class="[example.name.toLowerCase() == active ? 'scroller__link--active' : '']"
@@ -35,7 +35,7 @@
 							<span class="scroller__text">{{ example.name }}</span>
 						</button>
 					</li>
-					<li v-for="(example, idx) in examples" :key="idx" class="scroller__item">
+					<li v-for="(example, idx) in examples" :key="idx" class="scroller__item hide-for-small-only">
 						<button
 							class="scroller__link"
 							:class="[example.name.toLowerCase() == active ? 'scroller__link--active' : '']"
@@ -52,8 +52,8 @@
 				<div
 					v-for="(example, idx) in examples"
 					:key="idx"
-					class="example"
-					:class="[example.name.toLowerCase() == active ? 'example--active' : '']"
+					class="example-container"
+					:class="[example.name.toLowerCase() == active ? 'example-container--active' : '']"
 				>
 					<ExampleGrid v-if="example.name.toLowerCase() === 'grid'" />
 					<ExampleMenu v-if="example.name.toLowerCase() === 'menu'" />
@@ -83,7 +83,7 @@ export default {
 	},
 	data() {
 		return {
-			active: '',
+			active: 'menu',
 			examples: [
 				{ name: 'Grid', active: false },
 				{ name: 'Menu', active: false },
@@ -111,13 +111,16 @@ export default {
 	}
 }
 .scroller {
-	// position: absolute;
 	z-index: 2;
+	position: relative;
 	&__container {
 		position: relative;
 		padding: grid(0.5 0);
 		overflow: hidden;
 		width: 100vw;
+		@media #{$small-only} {
+			overflow-x: scroll;
+		}
 	}
 	&__list {
 		position: relative;
@@ -125,6 +128,9 @@ export default {
 		transform: translateX(-50%);
 		display: flex;
 		flex-wrap: nowrap;
+		@media #{$small-only} {
+			padding-left: $mobile-padding;
+		}
 	}
 	&__link {
 		text-decoration: none;
@@ -143,7 +149,7 @@ export default {
 		white-space: nowrap;
 		color: color(Ice);
 		font-size: grid(0.4);
-		@include min-(font-size, 0.4, 24);
+		@include min-(font-size, 0.4, 18);
 		& + & {
 			&::before {
 				content: '\00a0—\00a0';
@@ -152,16 +158,19 @@ export default {
 	}
 	&__text {
 		font-size: grid(0.4);
-		@include min-(font-size, 0.4, 24);
+		@include min-(font-size, 0.4, 20);
 		color: color(Ice);
 	}
 }
 
-.example {
+.example-container {
 	padding: grid(1 0);
 	position: fixed;
 	opacity: 0;
 	clip-path: inset(0 100% 0 0);
+	@media #{$small-only} {
+		padding: $mobile-padding;
+	}
 	&--active {
 		position: relative;
 		opacity: 1;

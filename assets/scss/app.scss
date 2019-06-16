@@ -14,3 +14,13 @@ $output: set-output(css, true);
 // Theme
 @import 'typography/typography';
 @import 'components/index';
+
+
+hr{
+	margin: grid(1 0);
+	color: color(Ice);
+	background-color: color(Ice);
+	border: none;
+	height: 1px;
+	display: block;
+}

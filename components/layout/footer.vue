@@ -152,6 +152,7 @@ export default {};
 	box-shadow: grid(1.5) 0 0 0 color(IceLight) inset;
 
 	@media #{$small-only} {
+		box-shadow: $mobile-padding 0 0 0 color(IceLight) inset;
 		padding: $mobile-padding $mobile-padding $mobile-padding ($mobile-padding * 2);
 	}
 	&__column {
