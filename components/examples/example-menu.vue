@@ -85,6 +85,9 @@ export default {};
 		display: flex;
 		align-items: center;
 		padding: grid(1);
+		position: relative;
+		max-width: 100%;
+		overflow: scroll;
 	}
 	&__block {
 		position: relative;

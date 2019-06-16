@@ -1,39 +1,31 @@
 <template>
 	<header id="header" class="header">
-		<div class="row">
-			<div class="column small-half medium-fifth text-left">
-				<nuxt-link to="/" class="header__logo">
-					henri's
-				</nuxt-link>
-			</div>
-			<div class="column hide-for-small medium-three-fifth text-center header__navigation">
-				<nav class="navigation">
-					<nuxt-link to="/story">
-						Story
-					</nuxt-link>
-					<nuxt-link to="/why">
-						Why
-					</nuxt-link>
-					<nuxt-link to="/help">
-						Help
-					</nuxt-link>
-					<nuxt-link to="/examples">
-						Examples
-					</nuxt-link>
-					<nuxt-link to="/in-the-wild">
-						In the wild
-					</nuxt-link>
-				</nav>
-			</div>
-			<div class="column small-half medium-fifth text-right header__subnavigation">
-				<nav class="navigation">
-					<a href="https://docs.henris.style">Docs</a>
-					<nuxt-link to="/about">
-						About
-					</nuxt-link>
-				</nav>
-			</div>
-		</div>
+		<nuxt-link to="/" class="header__logo">
+			henri's
+		</nuxt-link>
+		<nav class="navigation navigation--main">
+			<nuxt-link to="/story">
+				Story
+			</nuxt-link>
+			<nuxt-link to="/why">
+				Why
+			</nuxt-link>
+			<nuxt-link to="/help">
+				Help
+			</nuxt-link>
+			<nuxt-link to="/examples">
+				Examples
+			</nuxt-link>
+			<nuxt-link to="/in-the-wild">
+				In the wild
+			</nuxt-link>
+		</nav>
+		<nav class="navigation navigation--sub">
+			<a href="https://docs.henris.style">Docs</a>
+			<nuxt-link to="/about">
+				About
+			</nuxt-link>
+		</nav>
 	</header>
 </template>
 
@@ -53,19 +45,25 @@ export default {
 
 .header {
 	// Header styles
-	position: fixed;
 	top: 0;
 	left: 0;
+	height: 0;
 
+	z-index: 100;
 	width: 100%;
-	padding: grid(1.5 3);
-	@media #{$small-only} {
-		padding: $mobile-padding;
-	}
 	&__logo {
+		position: fixed;
+
+		top: grid(1.5);
+		left: grid(3);
+		@media #{$small-only} {
+			top: $mobile-padding;
+			left: $mobile-padding;
+		}
 		color: color(Blue);
 		font-weight: bold;
 		text-decoration: none;
+		z-index: 10;
 	}
 }
 .text-left {
@@ -79,11 +77,33 @@ export default {
 }
 
 .navigation {
+	position: fixed;
 	a {
+		color: white;
 		text-decoration: none;
 		& + a {
 			margin-left: 1rem;
 		}
+	}
+	&--main {
+		mix-blend-mode: difference;
+		top: grid(1.5);
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		@media #{$small-only} {
+			display: none;
+		}
+	}
+	&--sub {
+		mix-blend-mode: difference;
+		top: grid(1.5);
+		right: grid(3);
+		@media #{$small-only} {
+			top: $mobile-padding;
+			right: $mobile-padding;
+		}
+		z-index: 10;
 	}
 }
 </style>

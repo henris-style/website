@@ -181,8 +181,10 @@ export default {};
 			left: grid(3);
 			white-space: nowrap;
 			@media #{$small-only} {
-				left: grid(5);
-				top: 0;
+				position: relative;
+				display: block;
+				left: 0;
+				margin-top: 0.5rem;
 			}
 		}
 	}

@@ -17,7 +17,7 @@
 				<div class="blocks blocks__row row small-half medium-third">
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--grid"></span>
+							<span class="blocks__icon icon--grid"> <IconGrid></IconGrid></span>
 							<h4 class="blocks__title">
 								Grid
 							</h4>
@@ -25,7 +25,9 @@
 					</div>
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--colors"></span>
+							<span class="blocks__icon icon--colors">
+								<IconColors></IconColors>
+							</span>
 							<h4 class="blocks__title">
 								Colors
 							</h4>
@@ -33,7 +35,7 @@
 					</div>
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--animation"></span>
+							<span class="blocks__icon icon--animation"> <IconAnimation></IconAnimation></span>
 							<h4 class="blocks__title">
 								Animation
 							</h4>
@@ -70,7 +72,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+	components: {
+		IconGrid: () => import('~/components/icons/icon-grid.vue'),
+		IconColors: () => import('~/components/icons/icon-colors.vue'),
+		IconAnimation: () => import('~/components/icons/icon-animation.vue')
+	}
+};
 </script>
 
 <style lang="scss">

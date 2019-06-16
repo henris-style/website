@@ -17,6 +17,7 @@ export default {};
 <style lang="scss" scoped>
 @import '~tools';
 .intro {
+	background-color: color(White);
 	height: calc(100vh - #{grid(2)});
 	display: flex;
 	align-items: center;
