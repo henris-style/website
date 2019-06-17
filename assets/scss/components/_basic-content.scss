@@ -1,9 +1,24 @@
-.basic-content{
+.basic-content {
 	padding: grid(1 0);
-	@media #{$small-only}{
+	@media #{$small-only} {
 		padding: $mobile-padding;
 	}
-	h1{
+	h1 {
 		color: color(Blue);
 	}
+	.content {
+		break-inside: avoid;
+		& + .content {
+			margin-top: 1rem;
+		}
+
+	}
+
+	// .column__content{
+	// 	column-count: 2;
+	// 	column-gap: 2rem;
+	// 	@media #{$medium-down} {
+	// 		column-count: 1;
+	// 	}
+	// }
 }
