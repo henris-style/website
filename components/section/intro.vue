@@ -34,7 +34,7 @@ export default {};
 	h1 {
 		color: color(Blue);
 		font-size: grid(1);
-		@include min-('font-size', 1, 32);
+		@include min-('font-size', 1, 20);
 		> span {
 			display: block;
 			padding: 1rem;

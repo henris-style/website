@@ -43,7 +43,9 @@
 					</div>
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--utilities"></span>
+							<span class="blocks__icon icon--utilities">
+								<IconUtilities></IconUtilities>
+							</span>
 							<h4 class="blocks__title">
 								Utilities
 							</h4>
@@ -51,7 +53,9 @@
 					</div>
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--responsive"></span>
+							<span class="blocks__icon icon--responsive">
+								<IconResponsive></IconResponsive>
+							</span>
 							<h4 class="blocks__title">
 								Responsive
 							</h4>
@@ -79,7 +83,9 @@ export default {
 		IconGrid: () => import('~/components/icons/icon-grid.vue'),
 		IconColors: () => import('~/components/icons/icon-colors.vue'),
 		IconAnimation: () => import('~/components/icons/icon-animation.vue'),
-		IconBasics: () => import('~/components/icons/icon-basics.vue')
+		IconBasics: () => import('~/components/icons/icon-basics.vue'),
+		IconResponsive: () => import('~/components/icons/icon-responsive.vue'),
+		IconUtilities: () => import('~/components/icons/icon-utilities.vue')
 	}
 };
 </script>

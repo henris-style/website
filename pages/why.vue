@@ -1,10 +1,10 @@
 <template>
 	<div class="page page--why">
-				<section class="basic-intro">
+		<section class="basic-intro">
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
-						<h1>Why</h1>
+						<h1>Why you should use henri's..</h1>
 					</div>
 				</div>
 			</div>

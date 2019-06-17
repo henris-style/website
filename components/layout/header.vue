@@ -69,7 +69,7 @@ export default {
 		color: color(Blue);
 		font-weight: bold;
 		text-decoration: none;
-		z-index: 10;
+		z-index: 20;
 
 		//
 
@@ -101,6 +101,10 @@ export default {
 	right: 0;
 	top: 0;
 	z-index: 10;
+	&:focus {
+		outline: none;
+		background-color: color(DarkDark);
+	}
 	span {
 		@include menu();
 	}
@@ -129,6 +133,8 @@ export default {
 		display: flex;
 		@media #{$small-only} {
 			padding: grid(2);
+			width: 100%;
+			overflow-x: scroll;
 		}
 	}
 	&--main {
@@ -153,7 +159,7 @@ export default {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			overflow-x: scroll;
+			padding: 0;
 			a {
 				display: block;
 				padding: 2rem;
@@ -166,7 +172,6 @@ export default {
 					//margin: 1rem 0 0 0;
 				}
 				&:first-child {
-					border: 1px solid red;
 					margin-left: 2rem;
 				}
 			}
