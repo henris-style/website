@@ -109,6 +109,9 @@ export default {
 			@include menu-close();
 		}
 	}
+	@media #{$medium-up} {
+		right: -3rem;
+	}
 }
 
 .navigation {
@@ -124,7 +127,9 @@ export default {
 	}
 	&__wrapper {
 		display: flex;
-		padding: grid(2);
+		@media #{$small-only} {
+			padding: grid(2);
+		}
 	}
 	&--main {
 		filter: grayscale(100%);
