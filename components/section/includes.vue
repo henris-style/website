@@ -59,7 +59,9 @@
 					</div>
 					<div class="blocks__column column">
 						<div class="blocks__block">
-							<span class="blocks__icon icon--basics"></span>
+							<span class="blocks__icon icon--basics">
+								<IconBasics></IconBasics>
+							</span>
 							<h4 class="blocks__title">
 								Basics
 							</h4>
@@ -76,7 +78,8 @@ export default {
 	components: {
 		IconGrid: () => import('~/components/icons/icon-grid.vue'),
 		IconColors: () => import('~/components/icons/icon-colors.vue'),
-		IconAnimation: () => import('~/components/icons/icon-animation.vue')
+		IconAnimation: () => import('~/components/icons/icon-animation.vue'),
+		IconBasics: () => import('~/components/icons/icon-basics.vue')
 	}
 };
 </script>
@@ -96,44 +99,6 @@ export default {
 		padding-top: grid(1);
 		@media #{$small-only} {
 			padding: $mobile-padding / 2;
-		}
-	}
-}
-
-.blocks {
-	&__block {
-		background-color: color(White);
-		padding: 2rem;
-		@media #{$small-only} {
-			padding: $mobile-padding / 2;
-		}
-	}
-	&__icon {
-		display: block;
-		height: grid(3);
-		@media #{$small-only} {
-			height: grid(6);
-			svg {
-				height: grid(6);
-			}
-		}
-	}
-	&__title {
-		margin-top: 2rem;
-		text-align: center;
-	}
-	&__row {
-		width: calc(100% + 2rem);
-		margin-left: -1rem;
-		@media #{$small-only} {
-			width: 100%;
-			margin: 0;
-		}
-	}
-	&__column {
-		padding: $mobile-padding / 2;
-		@media #{$small-only} {
-			padding: $mobile-padding / 4;
 		}
 	}
 }

@@ -17,15 +17,30 @@ h1 {
 }
 
 h2 {
-	font-size: grid(1);
+	font-size: grid(.75);
 	line-height: 1;
-	@include min-(font-size, 1, 24px);
+	@include min-(font-size, .75, 28px);
 }
 
+h3 {
+	font-size: grid(0.5);
+	line-height: 1;
+	@include min-(font-size, .5, 24px);
+}
 h4 {
 	font-size: grid(0.4);
 	line-height: 1;
 	@include min-(font-size, .4, 20px);
+}
+h5 {
+	font-size: grid(0.3);
+	line-height: 1;
+	@include min-(font-size, .3, 16px);
+}
+h6 {
+	font-size: grid(0.2);
+	line-height: 1;
+	@include min-(font-size, .2, 14px);
 }
 
 p {

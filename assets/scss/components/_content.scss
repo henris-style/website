@@ -4,14 +4,76 @@
 			padding: 0.5rem;
 			line-height: 1.5;
 			position: relative;
-			display: flex;
+			display: block;
 
 			&::before {
+				position: absolute;
+				left: 0;
+				top: 0;
 				content: var(--content-list-icon, '-');
 				padding-right: var(--content-list-space, 0.75rem);
 				display: block;
 				line-height: inherit;
 			}
 		}
+	}
+	blockquote:not(class) {
+		quotes: '\201c''\201d';
+		p:before {
+			content: open-quote;
+		}
+		p:after {
+			content: close-quote;
+		}
+		padding: 1rem;
+	}
+	sup:not(class) {
+		font-variant-position: super;
+	}
+	sub:not(class) {
+		font-variant-position: sub;
+	}
+	code:not(class) {
+		background-color: rgba(0, 0, 0, 0.1);
+		padding: 0.25rem;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 600;
+		font-size: 0.8em;
+	}
+	pre:not(class) code {
+		display: block;
+		line-height: 1.5;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	table:not(class) {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		tr {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		td,
+		th {
+			padding: 1rem;
+		}
+		caption{
+			padding: 1rem;
+		}
+		
+	}
+}
+
+[data-label] {
+	position: relative;
+	&:before {
+		font-size: 12px;
+		background-color: color(Blue);
+		padding: 0.25rem;
+		position: absolute;
+		top: 0;
+		right: calc(100% + 1rem);
+		white-space: nowrap;
+		color: white;
+		display: block;
+		content: attr(data-label);
 	}
 }

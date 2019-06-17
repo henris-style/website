@@ -57,15 +57,20 @@
 						<p>
 							These are tools we love, and would love you to use them too! Or atleast check them out.
 						</p>
-						<div class="blocks blocks__row row small-half medium-quarter">
+						<div class="blocks blocks__row row small-full medium-half large-quarter">
 							<div class="blocks__column column">
 								<div class="blocks__block">
 									<div class="blocks__image">
 										<img src="images/logo/netlify.svg" alt="Netlify logo" />
 									</div>
-									<h4 class="block__title">
-										Netlify
-									</h4>
+									<div class="blocks__description">
+										<h4 class="blocks__title">
+											Netlify
+										</h4>
+										<p>
+											We use Netlify for easy and fast deployments and hosting. Netlify basic is free and works, like it should!
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="blocks__column column">
@@ -73,9 +78,12 @@
 									<div class="blocks__image">
 										<img src="images/logo/vue.svg" alt="Vue logo" />
 									</div>
-									<h4 class="block__title">
-										Vue
-									</h4>
+									<div class="blocks__description">
+										<h4 class="blocks__title">
+											Vue
+										</h4>
+										<p>Besides Sass, we love Vue, Vue is cool!</p>
+									</div>
 								</div>
 							</div>
 							<div class="blocks__column column">
@@ -83,9 +91,12 @@
 									<div class="blocks__image">
 										<img src="images/logo/nuxt.svg" alt="Nuxt logo" />
 									</div>
-									<h4 class="block__title">
-										Nuxt
-									</h4>
+									<div class="blocks__description">
+										<h4 class="blocks__title">
+											Nuxt
+										</h4>
+										<p>Nuxt makes it super easy to create a website or app with routing, ssr and everything.</p>
+									</div>
 								</div>
 							</div>
 							<div class="blocks__column column">
@@ -93,9 +104,12 @@
 									<div class="blocks__image">
 										<img src="images/logo/guyn.svg" alt="Guyn logo" />
 									</div>
-									<h4 class="block__title">
-										Guyn
-									</h4>
+									<div class="blocks__description">
+										<h4 class="blocks__title">
+											Guyn
+										</h4>
+										<p>Guyn Gives us a easy to implement and use colorset.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -114,21 +128,11 @@ export default {};
 @import '~tools';
 .background--darkdark {
 	box-shadow: grid(1.5) 0 0 0 white inset;
+	@media #{$small-only} {
+		box-shadow: $mobile-padding 0 0 0 white inset;
+		padding-left: $mobile-padding * 2;
+	}
 }
 .blocks {
-	&__image {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding-bottom: 100%;
-		img {
-			position: absolute;
-			width: 80%;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			max-height: 80%;
-		}
-	}
 }
 </style>
