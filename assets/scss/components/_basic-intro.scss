@@ -1,10 +1,13 @@
-.basic-intro{
+.basic-intro {
+	&:not([class*='background--']) {
+		background-color: color(White);
+	}
 	padding: grid(4 0 2 0);
-	@media #{$small-only}{
+	@media #{$small-only} {
 		padding: $mobile-padding;
 		padding-top: 120px;
 	}
-	h1{
+	h1 {
 		color: color(Blue);
 	}
 }

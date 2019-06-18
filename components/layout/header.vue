@@ -6,13 +6,13 @@
 		<nav class="navigation navigation--main" :class="[menuActive ? 'navigation--active' : '']">
 			<div class="navigation__wrapper">
 				<nuxt-link to="/story">
-					Story
+					Story..
 				</nuxt-link>
 				<nuxt-link to="/why">
-					Why
+					Why?
 				</nuxt-link>
 				<nuxt-link to="/help">
-					Help
+					Help!
 				</nuxt-link>
 				<nuxt-link to="/examples">
 					Examples
@@ -127,6 +127,9 @@ export default {
 		text-decoration: none;
 		& + a {
 			margin-left: 1rem;
+		}
+		&.active--exact {
+			color: color(Blue);
 		}
 	}
 	&__wrapper {

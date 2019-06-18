@@ -11,6 +11,11 @@ module.exports = {
 		environment: config.env || 'production'
 	},
 
+	router: {
+		linkPrefetchedClass: 'prefetched',
+		linkExactActiveClass: 'active--exact',
+		linkActiveClass: 'active'
+	},
 	/*
 	 ** Headers of the page
 	 */
@@ -35,7 +40,11 @@ module.exports = {
 	/*
 	 ** Plugins to load before mounting the App
 	 */
-	plugins: [],
+	plugins: [
+		{
+			src: '~/plugins/global.components.js'
+		}
+	],
 
 	/*
 	 ** Nuxt.js modules

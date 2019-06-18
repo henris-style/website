@@ -4,7 +4,7 @@
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
-						<h1>About Henri's</h1>
+						<Mh1 :source="'**About** __henri\'s__'"></Mh1>
 						<p>
 							Henri's is a Sass toolbelt as we call it. That means, that Henri's is a framework, which is implementable but
 							doesn't do your work for you, it helps you do your work.

@@ -5,6 +5,10 @@
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
 						<h1>Need help?</h1>
+						<p>
+							Yeah, everyone needs some help every once in a while. Whether it's a question like; "Can I do this with Henri's"
+							or "How can I do this the best way?", you can ask us everything and we will try to answer it as fast possible.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -14,10 +18,6 @@
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
-						<p>
-							Yeah, everyone needs some help every once in a while. Whether it's a question like; "Can I do this with Henri's"
-							or "How can I do this the best way?", you can ask us everything and we will try to answer it as fast possible.
-						</p>
 						<h4>But how?</h4>
 						<ul>
 							<li>

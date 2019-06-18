@@ -5,33 +5,47 @@
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
 						<h1>Why you should use henri's..</h1>
+						<p>There are several reasons why you should want to use Henri's and here you'll find some of them.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="basic-content">
+		<section class="basic-content background--blue">
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
+						<h3>You are a frontend developer with love for CSS</h3>
 						<p>
-							Nam ornare efficitur nibh. Morbi sem mauris, convallis non turpis ac, maximus lacinia urna. Nulla in molestie
-							leo. Proin laoreet rutrum nisl at porta. Praesent ullamcorper, ligula et suscipit ullamcorper, velit leo egestas
-							urna, dapibus volutpat felis est id felis. Nulla ac dui urna. Maecenas convallis pretium ligula a sagittis. Morbi
-							at tempor erat. Nunc vitae cursus tortor. In pulvinar id lectus id mattis. In faucibus ipsum sit amet enim cursus
-							euismod. Nullam ut scelerisque nibh. Integer dignissim velit ac gravida suscipit. Donec lorem libero, gravida a
-							molestie id, finibus et ligula. Aenean posuere, arcu nec dignissim sagittis, nisi ex vestibulum erat, sit amet
-							feugiat urna felis id purus.
+							Other frameworks give you a lot of tools and classes and already styled components. While the most fun in
+							actually making something is to make something. Not to click everything together with the right classes and make
+							something which looks like many other projects.
 						</p>
+					</div>
+					<div class="content">
+						<h3>It's lightweight</h3>
 						<p>
-							Quisque imperdiet, est et porttitor molestie, sem odio imperdiet enim, a euismod elit nisi id ex. Donec consequat
-							cursus odio in porta. Fusce condimentum tellus non nunc aliquam lacinia. Aenean semper felis pulvinar lectus
-							molestie, in maximus sapien egestas. Phasellus eget pellentesque metus. Integer eleifend est in arcu posuere, sed
-							tempus turpis aliquam. Nullam arcu sapien, aliquet sed sem ac, auctor pulvinar urna. In fermentum tellus in leo
-							tempus aliquet. Duis consectetur, mauris ut ornare luctus, nisi nisi sollicitudin erat, in pulvinar augue ipsum
-							accumsan erat. Maecenas commodo libero sem, sed faucibus nisi rutrum et. Suspendisse consequat id magna eget
-							malesuada. Vestibulum gravida neque in volutpat luctus. Mauris dolor dui, scelerisque vitae velit non, cursus
-							cursus augue. Fusce vel arcu nec ipsum condimentum egestas.
+							The basics of henri's is really light weight, in fact.. adding it into your project doesn't cost you anything
+							size wise. You can add components and other styling as you go to not bloat your project.
+						</p>
+						<P>
+							The fact that it doesn't have any output, means you could for instance add henri's to your main css, with some
+							output if you want. And add it still to all other components (like in Vue), where you can use all functionalities
+							of Henri's without adding any extra or double weight.
+						</P>
+					</div>
+					<div class="content">
+						<h3>You have a math problem</h3>
+						<p>
+							Henri's comes with a whole Math library of functions. So if you like to to experimental stuff with your Sass,
+							Henri's is your go to!
+						</p>
+					</div>
+					<div class="content">
+						<h3>You are using Foundation</h3>
+						<p>
+							Well, if you are using foundation for it's components and styling, please keep using it! It's great for that. If
+							you are just using it for the grid, henri's can help you out too!
 						</p>
 					</div>
 				</div>
