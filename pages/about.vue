@@ -57,58 +57,60 @@
 						<p>
 							These are tools we love, and would love you to use them too! Or atleast check them out.
 						</p>
-						<div class="blocks blocks__row row small-full medium-half large-quarter">
-							<div class="blocks__column column">
-								<div class="blocks__block">
-									<div class="blocks__image">
-										<img src="images/logo/netlify.svg" alt="Netlify logo" />
-									</div>
-									<div class="blocks__description">
-										<h4 class="blocks__title">
-											Netlify
-										</h4>
-										<p>
-											We use Netlify for easy and fast deployments and hosting. Netlify basic is free and works, like it should!
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="blocks__column column">
-								<div class="blocks__block">
-									<div class="blocks__image">
-										<img src="images/logo/vue.svg" alt="Vue logo" />
-									</div>
-									<div class="blocks__description">
-										<h4 class="blocks__title">
-											Vue
-										</h4>
-										<p>Besides Sass, we love Vue, Vue is cool!</p>
+						<div class="blocks__scroll">
+							<div class="blocks blocks__row row small-half medium-half large-quarter">
+								<div class="blocks__column column">
+									<div class="blocks__block">
+										<div class="blocks__image">
+											<img src="images/logo/netlify.svg" alt="Netlify logo" />
+										</div>
+										<div class="blocks__description">
+											<h4 class="blocks__title">
+												Netlify
+											</h4>
+											<p>
+												We use Netlify for easy and fast deployments and hosting. Netlify basic is free and works, like it should!
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="blocks__column column">
-								<div class="blocks__block">
-									<div class="blocks__image">
-										<img src="images/logo/nuxt.svg" alt="Nuxt logo" />
-									</div>
-									<div class="blocks__description">
-										<h4 class="blocks__title">
-											Nuxt
-										</h4>
-										<p>Nuxt makes it super easy to create a website or app with routing, ssr and everything.</p>
+								<div class="blocks__column column">
+									<div class="blocks__block">
+										<div class="blocks__image">
+											<img src="images/logo/vue.svg" alt="Vue logo" />
+										</div>
+										<div class="blocks__description">
+											<h4 class="blocks__title">
+												Vue
+											</h4>
+											<p>Besides Sass, we love Vue, Vue is cool!</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="blocks__column column">
-								<div class="blocks__block">
-									<div class="blocks__image">
-										<img src="images/logo/guyn.svg" alt="Guyn logo" />
+								<div class="blocks__column column">
+									<div class="blocks__block">
+										<div class="blocks__image">
+											<img src="images/logo/nuxt.svg" alt="Nuxt logo" />
+										</div>
+										<div class="blocks__description">
+											<h4 class="blocks__title">
+												Nuxt
+											</h4>
+											<p>Nuxt makes it super easy to create a website or app with routing, ssr and everything.</p>
+										</div>
 									</div>
-									<div class="blocks__description">
-										<h4 class="blocks__title">
-											Guyn
-										</h4>
-										<p>Guyn Gives us a easy to implement and use colorset.</p>
+								</div>
+								<div class="blocks__column column">
+									<div class="blocks__block">
+										<div class="blocks__image">
+											<img src="images/logo/guyn.svg" alt="Guyn logo" />
+										</div>
+										<div class="blocks__description">
+											<h4 class="blocks__title">
+												Guyn
+											</h4>
+											<p>Guyn Gives us a easy to implement and use colorset.</p>
+										</div>
 									</div>
 								</div>
 							</div>

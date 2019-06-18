@@ -1,5 +1,5 @@
 .basic-content {
-	padding: grid(1 0);
+	padding: grid(3 0);
 	@media #{$small-only} {
 		padding: $mobile-padding;
 	}
