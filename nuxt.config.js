@@ -49,7 +49,25 @@ module.exports = {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ['nuxt-rfg-icon', '@nuxtjs/google-analytics', '@nuxtjs/axios', '@nuxtjs/pwa'],
+	modules: [
+		[
+			'nuxt-rfg-icon',
+			{
+				rfg: {
+					design: {
+						ios: {
+							pictureAspect: 'backgroundAndMargin',
+							backgroundColor: '#000000',
+							margin: '0%'
+						}
+					}
+				}
+			}
+		],
+		'@nuxtjs/google-analytics',
+		'@nuxtjs/axios',
+		'@nuxtjs/pwa'
+	],
 
 	/*
 	 ** GoogleAnalytics module configuration
