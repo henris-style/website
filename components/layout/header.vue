@@ -129,6 +129,7 @@ export default {
 	position: fixed;
 	padding: 1rem;
 	z-index: 5;
+	animation: iosFix 0.5s infinite;
 	a {
 		color: white;
 		text-decoration: none;
