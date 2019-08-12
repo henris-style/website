@@ -51,7 +51,14 @@ export default {
 
 <style lang="scss">
 @import '~tools';
-
+@keyframes iosFix {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 0.01px;
+	}
+}
 .header {
 	// Header styles
 	top: 0;
@@ -182,6 +189,7 @@ export default {
 	}
 	&--active {
 		@media #{$small-only} {
+			animation: iosFix 0.5s infinite;
 			clip-path: inset(0 0 0% 0) !important;
 		}
 	}

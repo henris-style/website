@@ -51,9 +51,7 @@
 					<code>
 						<pre>
 @include menu(5rem, 1rem, 0.5rem, Lime, 0.5rem);
-@include menu-close; </pre
-						></code
-					>
+@include menu-close; </pre></code>
 				</div>
 				<div class="column small-third">
 					<div class=" example__view example__block">
@@ -104,7 +102,7 @@ export default {};
 
 code pre {
 	line-height: 1.5;
-	font-family: Roboto Mono;
+	font-family: Roboto Mono, 'courier';
 }
 
 .menu-example {

@@ -6,10 +6,8 @@
 					<div class="content">
 						<h1>Kitchensink</h1>
 						<p>
-							By default Henri's doesn't have output, but when you want some
-							basic styling, to make your website look clean by default,
-							ofcourse we offer that. Here you can see what elements will look
-							like.
+							By default Henri's doesn't have output, but when you want some basic styling, to make your website look clean by
+							default, ofcourse we offer that. Here you can see what elements will look like.
 						</p>
 					</div>
 				</div>
@@ -226,25 +224,19 @@
 							<blockquote>
 								<p>
 									<em>This is a properly formatted blockquote, btw.</em>
-									Measuring programming progress by lines of code is like
-									measuring aircraft building progress by weight.
+									Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
 								</p>
 								<footer>
 									—
-									<cite
-										><a href="http://www.thegatesnotes.com">Bill Gates</a></cite
-									>
+									<cite><a href="http://www.thegatesnotes.com">Bill Gates</a></cite>
 								</footer>
 							</blockquote>
 
 							<blockquote>
 								<p>
-									Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Vivamus magna. Cras in mi at felis aliquet
-									congue. Ut a est eget ligula molestie gravida. Curabitur
-									massa. Donec eleifend, libero at sagittis mollis, tellus est
-									malesuada tellus, at luctus turpis elit sit amet quam. Vivamus
-									pretium ornare est.
+									Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
+									aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+									mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
 								</p>
 							</blockquote>
 						</section>
@@ -266,17 +258,13 @@
 							<dl>
 								<dt>Definition list</dt>
 								<dd>
-									Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-									ea commodo consequat.
+									Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+									minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 								</dd>
 								<dt>Lorem ipsum dolor sit amet</dt>
 								<dd>
-									Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-									ea commodo consequat.
+									Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+									minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 								</dd>
 							</dl>
 						</section>
@@ -423,9 +411,7 @@
 									</div>
 									<div>
 										<label for="f5">Textarea:</label>
-										<textarea id="f5" cols="30" rows="5">
-Textarea text</textarea
-										>
+										<textarea id="f5" cols="30" rows="5">Textarea text</textarea>
 									</div>
 									<div>
 										<label for="f6">Input Button:</label>
@@ -434,10 +420,7 @@ Textarea text</textarea
 									<div>
 										<label
 											>Button Elements:
-											<span class="small quiet"
-												>Can use &lt;button&gt; tag or &lt;a
-												class="button"&gt;</span
-											></label
+											<span class="small quiet">Can use &lt;button&gt; tag or &lt;a class="button"&gt;</span></label
 										>
 										<button class="button positive">
 											Save
@@ -450,39 +433,19 @@ Textarea text</textarea
 						</section>
 						<section class="styled-links">
 							<h3>Styled links</h3>
-							<p>
-								I am <a href="something.doc">a word document</a> link, so
-								readers know that I'm not a normal link.
-							</p>
-							<p>
-								I am <a href="something.pdf">a pdf document</a> link, so readers
-								know that I'm not a normal link.
-							</p>
+							<p>I am <a href="something.doc">a word document</a> link, so readers know that I'm not a normal link.</p>
+							<p>I am <a href="something.pdf">a pdf document</a> link, so readers know that I'm not a normal link.</p>
 							<p>
 								I am
-								<a href="http://www.something.com">an external website</a> link,
-								so readers know that I'm not a normal link.
+								<a href="http://www.something.com">an external website</a> link, so readers know that I'm not a normal link.
 							</p>
+							<p>I am <a href="something.rss">an rss feed</a> link, so readers know that I'm not a normal link.</p>
+							<p>I am <a href="something.xls">an excel spreadsheet</a> link, so readers know that I'm not a normal link.</p>
+							<p>I am <a href="aim:something">an AIM screenname</a> link, so readers know that I'm not a normal link.</p>
+							<p>I am <a href="mailto:something">an email address</a> link, so readers know that I'm not a normal link.</p>
 							<p>
-								I am <a href="something.rss">an rss feed</a> link, so readers
-								know that I'm not a normal link.
-							</p>
-							<p>
-								I am <a href="something.xls">an excel spreadsheet</a> link, so
-								readers know that I'm not a normal link.
-							</p>
-							<p>
-								I am <a href="aim:something">an AIM screenname</a> link, so
-								readers know that I'm not a normal link.
-							</p>
-							<p>
-								I am <a href="mailto:something">an email address</a> link, so
-								readers know that I'm not a normal link.
-							</p>
-							<p>
-								I am <a href="http://yourwebsite.com">an internal link</a>.
-								Change the stylesheet's "http://yourwebsite.com" to your domain
-								name so I don't look like an external link.
+								I am <a href="http://yourwebsite.com">an internal link</a>. Change the stylesheet's "http://yourwebsite.com" to
+								your domain name so I don't look like an external link.
 							</p>
 
 							<p class="success">

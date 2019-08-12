@@ -18,3 +18,4 @@ dist
 .DS_Store
 config/latest.js
 static/sw.js
+static/icons

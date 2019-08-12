@@ -1,6 +1,6 @@
 <template>
 	<div class="page page--in-the-wild">
-			<section class="basic-intro">
+		<section class="basic-intro">
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
