@@ -42,7 +42,7 @@
 		"sass-loader": "^7.1.0",
 		"stylelint": "^10.1.0",
 		"stylelint-logical-order": "^0.0.5",
-		"stylelint-order": "^3.0.0"
+		"stylelint-order": "^3.1.0"
 	},
 	"browserslist": [
 		"last 2 versions",
