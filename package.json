@@ -25,7 +25,7 @@
 		"@sil/markdown": "^1.0.1",
 		"@sil/markdown-elements": "0.0.1",
 		"guyn": "0.0.10",
-		"nuxt": "^2.8.1"
+		"nuxt": "^2.10.2"
 	},
 	"devDependencies": {
 		"nuxt-rfg-icon": "^0.6.3",
