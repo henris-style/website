@@ -139,7 +139,7 @@ Henri's has been in the works for a long time. Over the years many people have c
 							</div>
 							<div class="column small-full medium-quarter team__member">
 								<h4>Louis Foulet</h4>
-								<a  class="button button--mini" href="https://github.com/citrongivrer">Github</a>
+								<a  class="button button--mini" href="https://github.com/citrongivre">Github</a>
 							</div>
 							<div class="column small-full medium-quarter team__member">
 								<h4>Maurits Meester</h4>

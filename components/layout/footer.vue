@@ -54,6 +54,11 @@
 								</nuxt-link>
 							</li>
 							<li class="footer__nav-item">
+								<nuxt-link class="footer__nav-link" to="/about#team">
+									Team
+								</nuxt-link>
+							</li>
+							<li class="footer__nav-item">
 								<nuxt-link class="footer__nav-link" to="/code-of-conduct">
 									Code of Conduct
 								</nuxt-link>
