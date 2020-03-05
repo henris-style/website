@@ -4,19 +4,18 @@
 			<div class="row center">
 				<div class="column small-full medium-three-quarter">
 					<div class="content">
-						<Mh1 :source="'**About** __henri\'s__'"></Mh1>
+						<h1>About <strong>Henri's</strong></h1>
 						<p>
 							Henri's is a Sass toolbelt as we call it. That means, that Henri's is a framework, which is implementable but
 							doesn't do your work for you, it helps you do your work.
 						</p>
 						<p>
-							Like many other Sass frameworks, they give you a certain style, useable components and in the end your project
-							looks like another project made with that framework. Henri's doesn't do that, it doesn't give you that style. No
+							Unlike many other Sass frameworks, Henri's doesn't give you any styling by default, because every project or brand is unique. Henri's doesn't enforce any style. No
 							website or project should look the same, especially not like a project for a company, because it should look like
-							a project or website of that company. In that companies style.
+							a project of your company.
 						</p>
 						<p>
-							Ofcourse you can overrule everything,
+							Ofcourse you can overrule everything, but let's start with a clean slate! Keep it minimal and keep the fun in styling things yourself.
 						</p>
 					</div>
 				</div>
@@ -71,6 +70,7 @@
 											<p>
 												We use Netlify for easy and fast deployments and hosting. Netlify basic is free and works, like it should!
 											</p>
+											<a class="button" href="https://netlify.com">Netlify</a>
 										</div>
 									</div>
 								</div>
@@ -84,6 +84,7 @@
 												Vue
 											</h4>
 											<p>Besides Sass, we love Vue, Vue is cool!</p>
+											<a class="button" href="https://vuejs.org">Vue.js</a>
 										</div>
 									</div>
 								</div>
@@ -97,6 +98,7 @@
 												Nuxt
 											</h4>
 											<p>Nuxt makes it super easy to create a website or app with routing, ssr and everything.</p>
+											<a class="button" href="https://nuxtjs.org">Nuxt</a>
 										</div>
 									</div>
 								</div>
@@ -110,6 +112,7 @@
 												Guyn
 											</h4>
 											<p>Guyn Gives us a easy to implement and use colorset.</p>
+											<a class="button" href="https://guyn.nl">Guyn</a>
 										</div>
 									</div>
 								</div>

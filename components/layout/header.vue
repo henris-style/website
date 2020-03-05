@@ -1,36 +1,56 @@
 <template>
 	<header id="header" class="header">
+		<div class="header__container">
 		<nuxt-link to="/" class="header__logo">
 			henri's
 		</nuxt-link>
 		<nav class="navigation navigation--main" :class="[menuActive ? 'navigation--active' : '']">
-			<div class="navigation__wrapper">
-				<nuxt-link to="/story">
-					Story..
+			<ul class="navigation__list">
+				
+	<li class="navigation__item">
+				<nuxt-link class="navigation__link" to="/about">
+					<span class="navigation__text">Story..</span>
 				</nuxt-link>
-				<nuxt-link to="/why">
-					Why?
+</li>
+	<li class="navigation__item">
+				<nuxt-link  class="navigation__link" to="/why">
+					<span class="navigation__text">Why?</span>
 				</nuxt-link>
-				<nuxt-link to="/help">
-					Help!
+</li>
+	<li class="navigation__item">
+				<nuxt-link  class="navigation__link" to="/help">
+					<span class="navigation__text">Help!</span>
 				</nuxt-link>
-				<nuxt-link to="/examples">
-					Examples
+</li>
+	<!-- <li class="navigation__item">
+				<nuxt-link  class="navigation__link" to="/examples">
+					<span class="navigation__text">Examples</span>
 				</nuxt-link>
-				<nuxt-link to="/in-the-wild">
-					In the wild
+</li>
+	<li class="navigation__item">			<nuxt-link t class="navigation__link" to="/in-the-wild">
+					<span class="navigation__text">In the wild</span>
 				</nuxt-link>
-			</div>
+
+</li> -->			
+</ul>
 		</nav>
-		<nav class="navigation navigation--sub">
-			<a href="https://docs.henris.style">Docs</a>
-			<nuxt-link to="/about">
-				About
+		<nav class="navigation navigation--sub"><ul class="navigation__list">
+	<li class="navigation__item">			
+			<a  class="navigation__link"  href="https://docs.henris.style">
+				<span class="navigation__text">Docs</span>
+			</a>
+</li>
+	<!-- <li class="navigation__item">
+			<nuxt-link  class="navigation__link" to="/about">
+				<span class="navigation__text">About</span>
 			</nuxt-link>
+</li> -->
+</ul>
 		</nav>
 		<button class="menu-trigger" :class="[menuActive ? 'menu-trigger--active' : '']" @click="menuActive = !menuActive">
 			<span></span>
 		</button>
+		</div>
 	</header>
 </template>
 
@@ -60,6 +80,7 @@ export default {
 	}
 }
 .header {
+	position: fixed;
 	// Header styles
 	top: 0;
 	left: 0;
@@ -68,26 +89,29 @@ export default {
 	z-index: 100;
 	width: 100%;
 	&__logo {
-		position: fixed;
-
-		top: 0;
-		left: 0;
-		transform: translate(#{grid(3)}, #{grid(1.5)});
+	
 		color: color(Blue);
 		font-weight: bold;
 		text-decoration: none;
 		z-index: 20;
 
 		//
+		align-self: flex-start;
 
 		background-color: color(Blue);
-		margin: -1rem;
-		padding: 1rem;
+		padding: 1em;
 		color: color(White);
 		@media #{$small-only} {
 			transform: none;
 			margin: 0;
 		}
+	}
+	&__container{
+		padding: grid(1);
+		// max-width: 960px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 .text-left {
@@ -120,90 +144,48 @@ export default {
 			@include menu-close();
 		}
 	}
-	@media #{$medium-up} {
+	// @media #{$medium-up} {
 		right: -3rem;
-	}
+	// }
 }
 
 .navigation {
-	position: fixed;
-	padding: 1rem;
 	z-index: 5;
 	animation: iosFix 0.5s infinite;
-	a {
-		color: white;
+	background-color: white;
+
+	&__link{
+		display: block;
+		padding: 1em;
 		text-decoration: none;
-		& + a {
-			margin-left: 1rem;
-		}
 		&.active--exact {
+			background-color: color(Blue);
+			color: white;
+		}
+		&:hover{
 			color: color(Blue);
 		}
 	}
-	&__wrapper {
+	&__text{
+	display: block;
+			color: inherit;
+	}
+	&__item{
+		display: block;
+	}
+	&__list {
 		display: flex;
-		@media #{$small-only} {
-			padding: grid(2);
-			width: 100%;
-			overflow-x: scroll;
-		}
+
 	}
 	&--main {
-		filter: grayscale(100%);
-		mix-blend-mode: difference;
-		top: calc(#{grid(1.5)} - 1rem);
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 10;
-		@media #{$small-only} {
-			transition: clip-path $base-transition;
-			clip-path: inset(0 0 100% 0);
-			mix-blend-mode: normal;
-			filter: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			transform: none;
-			width: 100vw;
-			height: 100%;
-			background-color: color(Blue);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 0;
-			a {
-				display: block;
-				padding: 2rem;
-				font-size: 2rem;
-				color: color(DarkDark);
-				font-weight: bold;
-				background-color: white;
-				white-space: nowrap;
-				& + a {
-					//margin: 1rem 0 0 0;
-				}
-				&:first-child {
-					margin-left: 2rem;
-				}
-			}
-		}
+		font-weight: bold;
+
 	}
 	&--active {
 		@media #{$small-only} {
 			animation: iosFix 0.5s infinite;
 			clip-path: inset(0 0 0% 0) !important;
 		}
-	}
-	&--sub {
-		mix-blend-mode: difference;
-		top: calc(#{grid(1.5)} - 1rem);
-		right: calc(#{grid(3)} - 1rem);
-		@media #{$small-only} {
-			top: $mobile-padding;
-			right: calc(#{$mobile-padding} + 1rem);
-			top: 0;
-		}
-		z-index: 10;
 	}
 }
 </style>
