@@ -1,7 +1,35 @@
 .button {
 	display: inline-block;
-	background-color: color(Blue);
 	color: contra(Blue);
-	padding: 0.75rem 1.5rem;
+	padding: 0.75em 1.25em;
 	text-decoration: none;
+	font-weight: bold;
+	position: relative; 
+	z-index: 1;
+	&::before,&::after{
+		content: "";
+	background-color: color(Blue);
+		z-index: -2;
+top: 0;		width: 100%; height: 100%;  position: absolute; left: 0; 	
+	}
+	&::after{
+		z-index: -1;
+		background-color:darken(Blue,10%);
+		clip-path: inset(0 100% 0 0);
+	transition: clip-path $base-transition;
+	}
+	&:hover::after{
+		clip-path: inset(0 0 0 0);
+	}
+	&--white{
+		color: color(Blue);
+		&::before{ 		background-color: color(White); }
+		&::after{
+			background-color: #f7f7f7;
+		}
+	}
+	&--mini{
+		padding: 0.5em;
+		font-size: 0.875em;
+	}
 }

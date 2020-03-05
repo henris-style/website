@@ -122,6 +122,41 @@
 				</div>
 			</div>
 		</section>
+		<section class="basic-content background--darkdark" id="team">
+			<div class="row right">
+				<div class="column small-full medium-three-quarter column__content">
+					<div class="content">
+						<h2>Team</h2>
+						<p>
+Henri's has been in the works for a long time. Over the years many people have contributed but main things are happening now by the following people;
+						</p>
+						<p>&nbsp;</p>
+						<div class="row team">
+							<div class="column small-full medium-quarter team__member">
+								<h4>Sil van Diepen</h4>
+								<a  class="button button--mini" href="https://github.com/silvandiepen">Github</a>
+								<a  class="button button--mini" href="https://twitter.com/silvandiepen">Twitter</a>
+							</div>
+							<div class="column small-full medium-quarter team__member">
+								<h4>Louis Foulet</h4>
+								<a  class="button button--mini" href="https://github.com/citrongivrer">Github</a>
+							</div>
+							<div class="column small-full medium-quarter team__member">
+								<h4>Maurits Meester</h4>
+								<a  class="button button--mini" href="https://github.com/mmeester">Github</a>
+								<a  class="button button--mini" href="https://twitter.com/mmeester">Twitter</a>
+							</div>
+							<div class="column small-full medium-quarter team__member">
+								<h4>Dennis Spierenburg</h4>
+								<a class="button button--mini" href="https://github.com/dipsaus9">Github</a>
+							</div>
+						</div>
+						<hr>
+						<p>Wanna help and become a contributor? <nuxt-link class="button button--white" to="/contact">Check us out</nuxt-link></p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </template>
 
@@ -138,6 +173,25 @@ export default {};
 		padding-left: $mobile-padding * 2;
 	}
 }
-.blocks {
+hr{
+	height: 2px;
+	border: none;
+	color: white;
+	background-color: white;
+}
+.team {
+	&__member{
+		h4{
+			margin-bottom: .5em;
+		}
+		@media #{$small-only}{
+			h4{
+				display: inline-block;
+			}
+			& + .team__member{
+				margin-top: 1em;
+			}
+		}
+	}
 }
 </style>

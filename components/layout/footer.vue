@@ -14,8 +14,8 @@
 						<h4>About</h4>
 						<ul class="footer__nav-list">
 							<li class="footer__nav-item">
-								<nuxt-link class="footer__nav-link" to="/story">
-									The story
+								<nuxt-link class="footer__nav-link" to="/about">
+									About
 								</nuxt-link>
 							</li>
 							<li class="footer__nav-item">
@@ -28,24 +28,29 @@
 									Help!
 								</nuxt-link>
 							</li>
-							<li class="footer__nav-item">
+							<!-- <li class="footer__nav-item">
 								<nuxt-link class="footer__nav-link" to="/contributing">
 									Contributing
 								</nuxt-link>
-							</li>
-							<li class="footer__nav-item">
+							</li> -->
+							<!-- <li class="footer__nav-item">
 								<nuxt-link class="footer__nav-link" to="/media">
 									Media
 								</nuxt-link>
-							</li>
-							<li class="footer__nav-item">
+							</li> -->
+							<!-- <li class="footer__nav-item">
 								<nuxt-link class="footer__nav-link" to="/examples">
 									Examples
 								</nuxt-link>
-							</li>
-							<li class="footer__nav-item">
+							</li> -->
+							<!-- <li class="footer__nav-item">
 								<nuxt-link class="footer__nav-link" to="/in-the-wild">
 									In the wild
+								</nuxt-link>
+							</li> -->
+							<li class="footer__nav-item">
+								<nuxt-link class="footer__nav-link" to="/contact">
+									Contact
 								</nuxt-link>
 							</li>
 							<li class="footer__nav-item">
