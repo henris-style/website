@@ -106,6 +106,12 @@
 						<h4>More</h4>
 						<ul class="footer__nav-list">
 							<li class="footer__nav-item">
+								<a class="footer__nav-link" href="https://www.netlify.com">
+									Netlify
+									<span>Our host! Check them out.. </span>
+								</a>
+							</li>
+							<li class="footer__nav-item">
 								<a class="footer__nav-link" href="https://github.com/henris-style">
 									Github
 									<span>Henri's code is fully on Github.</span>
@@ -115,12 +121,6 @@
 								<a class="footer__nav-link" href="https://codepen.io">
 									Codepen
 									<span>Some examples and the testing ground.</span>
-								</a>
-							</li>
-							<li class="footer__nav-item">
-								<a class="footer__nav-link" href="https://patreon.com">
-									Patreon
-									<span>Support Henri's</span>
 								</a>
 							</li>
 							<li class="footer__nav-item">
