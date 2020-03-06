@@ -1,28 +1,27 @@
 <template>
 	<header id="header" class="header">
 		<div class="header__container">
-		<nuxt-link to="/" class="header__logo">
-			henri's
-		</nuxt-link>
-		<nav class="navigation navigation--main" :class="[menuActive ? 'navigation--active' : '']">
-			<ul class="navigation__list">
-				
-	<li class="navigation__item">
-				<nuxt-link class="navigation__link" to="/about">
-					<span class="navigation__text">Story..</span>
-				</nuxt-link>
-</li>
-	<li class="navigation__item">
-				<nuxt-link  class="navigation__link" to="/why">
-					<span class="navigation__text">Why?</span>
-				</nuxt-link>
-</li>
-	<li class="navigation__item">
-				<nuxt-link  class="navigation__link" to="/help">
-					<span class="navigation__text">Help!</span>
-				</nuxt-link>
-</li>
-	<!-- <li class="navigation__item">
+			<nuxt-link to="/" class="header__logo">
+				henri's
+			</nuxt-link>
+			<nav class="navigation navigation--main" :class="[menuActive ? 'navigation--active' : '']">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<nuxt-link class="navigation__link" to="/about">
+							<span class="navigation__text">Story..</span>
+						</nuxt-link>
+					</li>
+					<li class="navigation__item">
+						<nuxt-link class="navigation__link" to="/why">
+							<span class="navigation__text">Why?</span>
+						</nuxt-link>
+					</li>
+					<li class="navigation__item">
+						<nuxt-link class="navigation__link" to="/help">
+							<span class="navigation__text">Help!</span>
+						</nuxt-link>
+					</li>
+					<!-- <li class="navigation__item">
 				<nuxt-link  class="navigation__link" to="/examples">
 					<span class="navigation__text">Examples</span>
 				</nuxt-link>
@@ -31,25 +30,26 @@
 					<span class="navigation__text">In the wild</span>
 				</nuxt-link>
 
-</li> -->			
-</ul>
-		</nav>
-		<nav class="navigation navigation--sub"><ul class="navigation__list">
-	<li class="navigation__item">			
-			<a  class="navigation__link"  href="https://docs.henris.style">
-				<span class="navigation__text">Docs</span>
-			</a>
-</li>
-	<!-- <li class="navigation__item">
+</li> -->
+				</ul>
+			</nav>
+			<nav class="navigation navigation--sub">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="https://docs.henris.style">
+							<span class="navigation__text">Docs</span>
+						</a>
+					</li>
+					<!-- <li class="navigation__item">
 			<nuxt-link  class="navigation__link" to="/about">
 				<span class="navigation__text">About</span>
 			</nuxt-link>
 </li> -->
-</ul>
-		</nav>
-		<button class="menu-trigger" :class="[menuActive ? 'menu-trigger--active' : '']" @click="menuActive = !menuActive">
-			<span></span>
-		</button>
+				</ul>
+			</nav>
+			<button class="menu-trigger" :class="[menuActive ? 'menu-trigger--active' : '']" @click="menuActive = !menuActive">
+				<span></span>
+			</button>
 		</div>
 	</header>
 </template>
@@ -89,7 +89,6 @@ export default {
 	z-index: 100;
 	width: 100%;
 	&__logo {
-	
 		color: color(Blue);
 		font-weight: bold;
 		text-decoration: none;
@@ -106,7 +105,7 @@ export default {
 			margin: 0;
 		}
 	}
-	&__container{
+	&__container {
 		padding: grid(1);
 		// max-width: 960px;
 		margin: auto;
@@ -145,7 +144,7 @@ export default {
 		}
 	}
 	// @media #{$medium-up} {
-		right: -3rem;
+	right: -3rem;
 	// }
 }
 
@@ -154,7 +153,7 @@ export default {
 	animation: iosFix 0.5s infinite;
 	background-color: white;
 
-	&__link{
+	&__link {
 		display: block;
 		padding: 1em;
 		text-decoration: none;
@@ -162,24 +161,22 @@ export default {
 			background-color: color(Blue);
 			color: white;
 		}
-		&:hover{
+		&:hover {
 			color: color(Blue);
 		}
 	}
-	&__text{
-	display: block;
-			color: inherit;
+	&__text {
+		display: block;
+		color: inherit;
 	}
-	&__item{
+	&__item {
 		display: block;
 	}
 	&__list {
 		display: flex;
-
 	}
 	&--main {
 		font-weight: bold;
-
 	}
 	&--active {
 		@media #{$small-only} {

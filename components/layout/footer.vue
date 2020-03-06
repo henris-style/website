@@ -63,6 +63,11 @@
 									Code of Conduct
 								</nuxt-link>
 							</li>
+							<li class="footer__nav-item">
+								<nuxt-link class="footer__nav-link" to="/license">
+									License
+								</nuxt-link>
+							</li>
 						</ul>
 					</div>
 					<div class="column footer__column">
